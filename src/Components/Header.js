@@ -28,7 +28,7 @@ export default function Header() {
                 {showSideBar && <Sidebar sideBar={showSideBar} setSideBarShow={setSideBarShow} />}
             </div>
             <div className={`w-full transform ${showSideBar ? "ml-auto" : "ml-0"} transition delay-200 ease-in-out duration-1000`}>
-                <header className="flex items-center justify-between max-h-16 bg-neutral-100 drop-shadow-lg pe-2 ps-0 py-2">
+                <header className="flex items-center justify-between max-h-16 bg-neutral-100 pe-2 ps-0 py-2">
                     {!showSideBar && <img
                         src={hamburger}
                         alt='Sidebar Menu'
@@ -37,11 +37,10 @@ export default function Header() {
                     />}                    
                     <div className="flex justify-center items-center gap-1">
                         <img src={Logo} alt='Logo for the APP' className='h-10' />
-                        <span className=''>A Notes Collaborator</span>
+                        <span className='cursor-default'>A Notes Collaborator</span>
                     </div>
-                    <div className={`flex justify-center items-center gap-1 bg-gray-300 p-2 rounded-full transition-all duration-500 ease-in-out transform hover:scale-105 ${showUser ? "min-w-32" : "min-w-10"}`} onMouseEnter={handleDisplayEnter} onMouseLeave={handleDisplayExit} style={{ transition: 'width 0.5s ease-in-out' }}>
+                    <div className={`flex justify-center items-center gap-1 bg-gray-300 p-2 rounded-full`} onMouseEnter={handleDisplayEnter} onMouseLeave={handleDisplayExit} style={{ transition: 'width 0.5s ease-in-out' }}>
                         <img src={userLogo} alt='User' className='h-6' />
-                        {showUser && <span className='text-md'>UserName</span>}
                     </div>
                 </header>
             </div>
