@@ -6,9 +6,9 @@ import searchIcon from '../Images/Sidebar Items/search-image.svg'
 import settingsIcon from '../Images/Sidebar Items/settings-image.svg'
 import addIcon from '../Images/Sidebar Items/add-notes.svg'
 
-export default function Sidebar({showSideBar , setSideBarShow}){
+export default function Sidebar({showSideBar , closeSidebar}){
     const handleChange = () => {
-        setSideBarShow(prevState => !prevState)
+        closeSidebar();
     }
     return (       
        <nav className="flex flex-col h-screen max-w-80 min-w-80 bg-neutral-100 m-0 drop-shadow-lg ">
