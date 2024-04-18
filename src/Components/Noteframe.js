@@ -1,7 +1,17 @@
 export default function Noteframe(){
     return(
-        <div className="drop-shadow-lg h-96 w-60 overflow-auto hover:resize min-h-40 min-w-40 bg-orange-200 rounded-2xl p-3">
-            
+        <div className="noteFrame">
+            <div class="title-section flex items-center justify-center">
+               <input type="text" className="inputTexts" placeholder="Heading..."></input>
+            </div>
+            <hr className="breakPoints"/>
+            <div class="mainContent">
+               Main Content
+            </div>
+            <hr className="breakPoints"/>
+            <div class="footer-section flex items-center justify-center">
+                Footer Section
+            </div>
         </div>
     )
 }

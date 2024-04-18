@@ -59,7 +59,6 @@ export default function Sidebar({showSideBar , closeSidebar}){
                 </div>
              </li>            
            </ul>
-
        </nav> 
     )
 }

@@ -9,9 +9,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.noteFrame {
+   @apply flex flex-col drop-shadow-lg h-96 w-60 overflow-auto hover:resize min-h-40 min-w-40 bg-orange-200 rounded-2xl ps-3 pe-3 pb-1;
+}
+
+.title-section {
+  @apply min-h-9 w-full mt-2;
+}
+
+.footer-section {
+  @apply min-h-10 w-full mt-auto; /* mt-auto will push it to the bottom */
+}
+
+.mainContent {
+  @apply flex-grow w-full; /* flex-grow allows it to expand */
+}
+
+.breakPoints {
+  @apply bg-black h-[1px] w-full rounded-sm border-black;
+}
+
+.inputTexts{
+  @apply w-full p-2 bg-transparent focus:outline-none overscroll-none text-center text-2xl font-bold focus:font-semibold;
 }

@@ -20,7 +20,7 @@ function App() {
       </div>
       <div className='grow bg-green-400'>
         <Header showSideBar={showSideBar} openSidebar={openSidebar}/>   
-        <div className='p-3'>
+        <div className='p-3 overflow-visible'>
               <Noteframe />
         </div>  
       </div>  
